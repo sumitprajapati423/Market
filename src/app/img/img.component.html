@@ -1,0 +1,97 @@
+<p>img works!</p>
+
+<div id="shareiconmodal" class="modal">
+  <div class="modal-content animate">
+    <div class="crossicon">
+      <span class="bg-cross" (click)="closepop()"></span>
+    </div>
+    <div
+      class="container"
+      style="
+        width: 90%;
+        transform: translate(0, 0);
+        margin: 7% auto;
+        text-align: center;
+      "
+    >
+      <div class="sharefont">Love Sharing</div>
+      <div class="social">
+        <a
+          target="_blank"
+          (click)="openlink(0)"
+          data-action="share/whatsapp/share"
+        >
+          <img
+            class="socialimgtag"
+            src="assets/images/shopdetailicons/sharewhatsapp.png"
+            alt="whatsapp"
+          />
+        </a>
+        <a target="_blank" (click)="openlink(1)"
+          ><img
+            class="socialimgtag"
+            src="assets/images/shopdetailicons/sharefb1.png"
+            alt="Facebook Logo"
+        /></a>
+
+        <a target="_blank" (click)="openlink(2)">
+          <img
+            class="socialimgtag"
+            src="assets/images/shopdetailicons/sharepintrest2.png"
+            alt="Pinterest Logo"
+        /></a>
+        <a target="_blank" href="" (click)="openlink(3)"
+          ><img
+            class="socialimgtag"
+            src="assets/images/shopdetailicons/sharetwitter1.png"
+            alt="Twitter Logo"
+        /></a>
+
+        <a target="_blank" (click)="openlink(4)">
+          <img
+            class="socialimgtag"
+            src="assets/images/shopdetailicons/sharelinkedin1.png"
+            alt="LinkedIn Logo"
+          />
+        </a>
+        <a
+          target="_blank"
+          href="mailto:info@example.com?&subject=Please check out this store 🙌 {{
+            selectedshop.unitname
+          }}&body=Check this store {{ selectedshop.unitname }} {{
+            baseUrl
+          }}/{{ router.url }}%0A"
+        >
+          <img
+            class="socialimgtag"
+            src="assets/images/shopdetailicons/sharetomail.png"
+            alt="mail"
+          />
+        </a>
+        <a
+          class="copytag"
+          (click)="copyMessage()"
+          value="click to copy"
+        >
+          <img
+            class="socialimgtag"
+            src="assets/images/shopdetailicons/copylink.png"
+            alt="Copy"
+          />
+          <span class="tooltiptext" id="ttip">Link Copied</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div  style="width: 10%;" class="share" (click)="openSharePopup()">
+    <img
+      style="width:100%"
+      src="../../assets/instagram_logo_icon_238280.png"
+      alt="share"
+      class="fav-like-share-icon" 
+    />
+    <button>share</button>
+  </div>
