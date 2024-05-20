@@ -16,6 +16,7 @@ import { DragComponent } from './drag/drag.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { BitdraggableModule } from '@bitbeast/bitdraggable';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -47,7 +48,8 @@ import { CommonModule } from '@angular/common';
     HttpClientModule,
     BrowserAnimationsModule,
     BitdraggableModule,
-    CommonModule
+    CommonModule,
+    FormsModule
 
 
   ],

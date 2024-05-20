@@ -89,8 +89,9 @@ position: absolute;
   margin-left: 450px;
 }
 
-.btn button{
+button{
   margin-top: 10px;
+  margin-left: 45%;
   width: 90px;
   height: 40px;
   border-radius: .6rem;
@@ -100,7 +101,7 @@ position: absolute;
   font-size: larger;
  }
 
- .btn button:hover{
+button:hover{
   background-color: green;
  }
 
