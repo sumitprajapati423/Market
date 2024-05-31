@@ -137,6 +137,22 @@ public onReady( editor: DecoupledEditor ): void {
   ckdata:string='';
   safetext: SafeHtml;
 
+  // -------------------------ckeditor style------------
+
+  constructor(private http: HttpClient, private sanitizer: DomSanitizer) {
+    this.safetext = this.sanitizer.bypassSecurityTrustHtml('<div></div>')
+   }
+
+   ret_safe_text() {
+    this.safetext = this.sanitizer.bypassSecurityTrustHtml(this.textdata)
+   }
+
+
+
+
+
+
+
   showInput: boolean = false;
 
   toggleInput() {
@@ -225,13 +241,7 @@ public onReady( editor: DecoupledEditor ): void {
 
     // -----------------Share Button --------------
 
-  constructor(private http: HttpClient, private sanitizer: DomSanitizer) {
-    this.safetext = this.sanitizer.bypassSecurityTrustHtml('<div></div>')
-   }
 
-   ret_safe_text() {
-    this.safetext = this.sanitizer.bypassSecurityTrustHtml(this.textdata)
-   }
 
   imageUrl: string = 'https://i.ibb.co/jR70VKs/screenshot-12.png[/img';
 
