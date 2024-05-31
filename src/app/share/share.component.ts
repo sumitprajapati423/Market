@@ -36,9 +36,9 @@ export class ShareComponent implements OnInit {
         },
         // Add more share buttons as needed
       ];
-      shareButtons.forEach((share) => {
-        this.shareService.share(share.button, share.url);
-      });
+      // shareButtons.forEach((share) => {
+      //   this.shareService.share(share.button, share.url);
+      // });
     })
 
 

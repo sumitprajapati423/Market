@@ -4,6 +4,7 @@ import { ShareComponent } from './share/share.component';
 import { ImgComponent } from './img/img.component';
 import { SssComponent } from './sss/sss.component';
 import { DragComponent } from './drag/drag.component';
+import { CkeditorComponent } from './ckeditor/ckeditor.component';
 
 // import { HomeComponent } from './home/home.component';
 
@@ -19,6 +20,9 @@ const routes: Routes = [
   },
   {
     path:'drag',component:DragComponent
+  },
+  {
+    path:'cke',component:CkeditorComponent
   },
 
 ];

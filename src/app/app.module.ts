@@ -17,6 +17,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { BitdraggableModule } from '@bitbeast/bitdraggable';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { CkeditorComponent } from './ckeditor/ckeditor.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
+
+
+
+
+
 
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -31,6 +41,7 @@ import { FormsModule } from '@angular/forms';
     ImgComponent,
     SssComponent,
     DragComponent,
+    CkeditorComponent,
 
 
 
@@ -44,12 +55,17 @@ import { FormsModule } from '@angular/forms';
       debug:true
     }),
     ShareIconsModule,
-    // FontAwesomeModule,
+    FontAwesomeModule,
     HttpClientModule,
     BrowserAnimationsModule,
     BitdraggableModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    CKEditorModule,
+
+
+
+
 
 
   ],
